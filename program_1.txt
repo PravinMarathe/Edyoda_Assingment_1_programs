@@ -1,0 +1,8 @@
+numbers = 50
+past, current = 0, 1
+
+for _ in range(numbers):
+    if current > numbers:
+        break
+    print(current, end=" ")
+    past, current = current, past + current
